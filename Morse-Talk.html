@@ -6,36 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morse Code Translator</title>
     <style>
+        :root{
+            --primary: #00FFFF;
+        }
         body{
            margin:0px;
         }
        h1{
-        background-color: #00FFFF;
+        background-color:var(--primary);
         padding: 1rem 1rem;
         margin:0px;
         text-align: center;
        }
        #Input-Text{
-            display:block;
-            border-color: black ;
-            border-style: solid;
-            border-width: 50%;
-            border:2px;
+        display:block;
+        border-color: black;
+        border-style: solid;
+        height: 20vh;
+        border-width: 60%;
+        margin-left: 30%;
+        margin-right: 30%;
+        font-family: inherit;
+        border-radius: 0.5rem;
+       padding-bottom: 1rem;
+       width: 500px;
+       margin-top:1rem;
+        
+       }
+       #button-translation{
+        background-color: var(--primary);
+        padding:0.5rem;
+        margin:1.5rem;
+        margin-left: 30%;
+        margin-right: 30%;
+        border-radius: 0.5rem;
+       }
+       #result{
+        margin-left: 30%;
+        margin-right: 30%;
+        font-style: italic;
+        font-weight: bold;
+       }
+       #Output-Text{
+        display:block;
+        border-color: black;
+        border-style: solid;
+        height: 20vh;
+        border-width: 60%;
+        margin-left: 30%;
+        margin-right: 30%;
+        font-family: inherit;
+        border-radius: 0.5rem;
+       padding-bottom: 1rem;
+       width: 500px;
+       margin-top:1rem;
+       margin-bottom: 1rem;
+       }
+       #navigation{
+        background-color: var(--primary);
+        margin:0px;
+        padding: 1rem;
+        text-align: center;
+      
+       
        }
     </style>
 </head>
 <body>
     <nav>
-<h1>Morse Code</h1> 
-<p id="Input-Text"placeholder="type here what do  you want ro translate from english to Morse code"></p>
+<h1>Morse Code</h1>
+<textarea id="Input-Text" placeholder="type here what do  you want ro translate from english to Morse code"></textarea>
 </nav>
-<button id="button">Click here to Morse code</button>
- <div>Your result will display here</div>   
+<button id="button-translation">Click here to Morse code</button>
+ <div id="result">Your result will display here</div>   
    <div id="Output-Text"></div>
-   <nav>
-    <div>About</div>
-    <p></p>
-   </nav> 
-    
-</body>
+   <footer>
+    <div id="navigation">About</div>
+    <p id="navigation">If you like our Morse Code why not create 
+        a great app with it by using our Morse Code API</p>
+    </footer> 
+    <script src="Apps.js" type="text/javascript" ></script>
+</body> 
 </html>
